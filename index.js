@@ -1,5 +1,6 @@
 const cardContainer = document.getElementById("card-container");
 const search = document.getElementById("search");
+const spinner = document.getElementById("spinner");
 
 let pokemons = [];
 
@@ -52,10 +53,10 @@ const pokemon = async () => {
         poke.weight
       );
     });
+    spinner.classList.toggle("hidden");
   } catch (error) {
     console.error(error);
   }
-  console.log(pokemons);
 };
 pokemon();
 

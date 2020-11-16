@@ -34,6 +34,20 @@ header {
   outline: none;
 }
 
+.spinner {
+  display: flex;
+}
+
+#spinner {
+  width: 100px;
+  height: 100px;
+  margin: 0rem auto;
+}
+
+.hidden {
+  display: none;
+}
+
 #card-container {
   display: flex;
   flex-direction: row;
@@ -129,6 +143,7 @@ header {
   margin-right: 0.25rem;
   border-radius: 25px;
   font-weight: 600;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 900px) {
